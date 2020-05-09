@@ -1,0 +1,30 @@
+package PrototypeProj;
+import java.util.Scanner;
+public class Calculator {
+
+	public static void main(String[] args) {	
+		
+		
+		
+		Scanner in = new Scanner(System.in);
+		
+		// The Hello Dialog
+		System.out.println("Hello what is your name?");
+		String s = in.nextLine();
+		System.out.println("Hi "+s);
+		// End of Hello Dialog
+		// First and Second Numbers input
+		System.out.println("What is the first number to add.");
+		int num1 = in.nextInt();
+		System.out.println("Okay, What is the second number to add.");
+		int num2 = in.nextInt();
+		//End of input dialog
+		int T = num1+num2;
+		System.out.println("Okay your answer is "+T);
+		
+		System.out.println("Bye have a great day.");		        
+	}
+		
+			
+
+}
