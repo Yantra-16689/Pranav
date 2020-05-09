@@ -1,0 +1,29 @@
+package PrototypeProj;
+import java.util.Scanner;
+public class Proto {
+
+	public static void main(String[] args) {	
+		{
+		    
+		    {
+		       Scanner in = new Scanner(System.in);
+		       System.out.println("What is Your name?");
+		        String s = in.nextLine();
+		        System.out.println("Hi "+s);
+		        System.out.println("How are you doing?");
+		        String a = in.nextLine();
+		        System.out.println("Okay well I am "+a + " too");
+		        
+		        System.out.println("How old are you?");
+		        int b = in.nextInt();
+		        System.out.println("Wow nice you are "+b + " already");
+		    }
+		}
+		
+		
+		
+		
+		System.out.println("Bye have a great day.");
+	}
+
+}
