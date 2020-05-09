@@ -1,0 +1,67 @@
+package PrototypeProj;
+
+import java.util.Scanner;
+
+public class CalculatorV2 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner in = new Scanner(System.in);
+		
+		// The Hello Dialog
+		System.out.println("Hello what is your name?");
+		String s = in.nextLine();
+		System.out.println("Hi "+s);
+		// End of Hello Dialog
+		// If Statement for operation
+		System.out.println("What operation do you want to conduct.");
+		System.out.println("Press 1 for Addition, Press 2 for Subtraction, Press 3 for Multiplication, Press 4 for division");
+		int o = in.nextInt();
+		//End Of Operation Taking
+		switch (o) {
+		//Addition
+        case 1:  System.out.println("What is the first number to add.");
+		int add1 = in.nextInt();
+		System.out.println("Okay, What is the second number to add.");
+		int add2 = in.nextInt();
+		int A = add1+add2;
+		System.out.println("Okay your answer is "+A);		
+		System.out.println("Bye have a great day.");
+		System.exit(0);
+		//Subtraction
+        case 2:  System.out.println("What is the first number to subtract.");
+		int sub1 = in.nextInt();
+		System.out.println("Okay, What is the second number to subtract.");
+		int sub2 = in.nextInt();
+		int S = sub1-sub2;
+		System.out.println("Okay your answer is "+S);		
+		System.out.println("Bye have a great day.");
+		System.exit(0);
+		//Multiplication
+        case 3:  System.out.println("What is the first number to multiply.");
+		int mul1 = in.nextInt();
+		System.out.println("Okay, What is the second number to multiply.");
+		int mul2 = in.nextInt();
+		int M = mul1*mul2;
+		System.out.println("Okay your answer is "+M);		
+		System.out.println("Bye have a great day.");
+		System.exit(0);
+		//Division
+        case 4:  System.out.println("What is the first number to divide.");
+		int div1 = in.nextInt();
+		System.out.println("Okay, What is the second number to divide.");
+		int div2 = in.nextInt();
+		int D = div1/div2;
+		System.out.println("Okay your answer is "+D);		
+		System.out.println("Bye have a great day.");
+		System.exit(0);
+		default: System.out.println("Invalid Option Restart Calculator.");
+		System.exit(0);
+    }
+		
+		
+
+	}
+
+}
