@@ -1,0 +1,44 @@
+package PrototypeProj;
+
+public class LoadingScreen {
+
+	public static void main(String[] args) {
+		int loopVal;
+		int end_value = 101;
+		
+		for ( loopVal = 0; loopVal < end_value; loopVal++) {
+				
+			System.out.println("Loading... "); 
+			System.out.println(loopVal+"%");
+			try {
+		        Thread.sleep(100);
+		    }
+		    catch(InterruptedException ex) {
+		    }
+			
+			
+		}
+		System.out.println("Load Complete Inatalizing Systems...");
+		try {
+	        Thread.sleep(5000);
+	    }
+	    catch(InterruptedException ex) {
+	    }
+		
+		for ( loopVal = 0; loopVal < end_value; loopVal++) {
+			
+			System.out.println("Loading... "); 
+			System.out.println(loopVal+"%");
+			try {
+		        Thread.sleep(100);
+		    }
+		    catch(InterruptedException ex) {
+		    }
+			
+			
+		}
+		System.out.println("All Systems Are Go "
+				+ "Turning off.");
+	}
+
+}
