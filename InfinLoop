@@ -1,0 +1,18 @@
+package PrototypeProj;
+
+public class InfinLoop {
+
+	
+	public static void main(String[] args) {
+	    long i = 0;
+	    long t = 1;
+	    while (true) {
+	    	
+	    	double m = i* Math.pow(i,t);
+	      System.out.println(m);
+	      i++;
+	      t++;
+	     
+	    }  
+	  }
+}
