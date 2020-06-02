@@ -1,0 +1,71 @@
+package Find_Duplicates;
+import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FindDups2 {
+
+	public static void main(String[] args) {
+		
+		
+		try {
+			Scanner in = new Scanner(System.in);
+		    System.out.println("Hi, What is the path of the First File?");
+		    String F1 = in.nextLine();
+		    System.out.println("What is the path of the Second File?");
+		    String F2 = in.nextLine();
+		    System.out.println("Thank you Processing request...");
+			
+		File File1 = new File(F1);
+		File File2 = new File(F2);
+	    Scanner ReaderFile = new Scanner(File1);
+	    Scanner ReaderFile2 = new Scanner(File2);
+	    
+	    int a = 0;
+	    ArrayList<String> data = new ArrayList<String>();
+	    System.out.println("Your first file Contents are: ");
+	    while (ReaderFile.hasNextLine()) { 
+	    data.add(ReaderFile.nextLine());
+	    System.out.println(data.get(a));
+	    a++;
+	    }
+	    try {
+	        Thread.sleep(2000);
+	    }
+	    catch(InterruptedException ex) {
+	    }
+	    int b = 0;
+	    ArrayList<String> data2 = new ArrayList<String>();
+	    System.out.println("Your second file Contents are: ");
+	    while (ReaderFile2.hasNextLine()) {
+	    data2.add(ReaderFile2.nextLine());
+	    System.out.println(data2.get(b));
+	    b++;
+	    }
+	    try {
+	        Thread.sleep(2000);
+	    }
+	    catch(InterruptedException ex) {
+	    }
+	    System.out.println("The Items which are the same in both files are ");
+	    data.retainAll(data2);
+        System.out.println(data);
+        try {
+	        Thread.sleep(2000);
+	    }
+	    catch(InterruptedException ex) {
+	    }
+	    
+	    in.close();
+		ReaderFile2.close();
+		ReaderFile.close();
+		}
+		catch (FileNotFoundException e) {
+		      System.out.println("Your file has not been found please check that you have entered the path and file properly.");
+		      e.printStackTrace();
+		}
+	      
+	      }
+
+}
